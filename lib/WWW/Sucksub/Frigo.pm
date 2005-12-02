@@ -5,11 +5,11 @@ WWW::Sucksub::Frigo - Automated access to frigorifix subtibles database
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -142,7 +142,7 @@ on the output ( see the logout() method too.)
 =head4 logout()
   			
 if you want some debug informations, you should set the debug attribute to 1
-See debug() method. 
+See debug() method for more precisions. 
 logout() method is associated to the debug() attribute value. 
 It indicates path where debug info will be written.
 Default value is :
@@ -183,7 +183,7 @@ If $foo->html() is defined. you can get the value of this attribute like this :
 
 	my $html_page = $foo->html()
 
-html file will be used for repport with search and searchdbm() methods.
+html file will be used for report with search and searchdbm() methods.
 
 =head4 username_frigo()
 
@@ -191,7 +191,7 @@ Allow you to login and obtain cookies from frigorifix web site
 
 	$foo->username_frigo('my_login')
 
-Default value is empty. there's no obligations to fill it.
+Default value is empty. there's no obligation to fill it.
 Otherwise, you should fill password_frigo() too.
 
 =head4 password_frigo()
@@ -200,7 +200,7 @@ Allow you to login and obtain cookies from frigorifix web site
 
 	$foo->password_frigo('my_password')
 
-Default value is empty. there's no oblgations to fill it.
+Default value is empty. there's no obligations to fill it.
 Otherwise, you should fill username_frigo() too.
 
 
@@ -222,7 +222,7 @@ the motif() pattern.
 =head2 searchdbm() 
 
 this function takes no arguments.
-it alows to initiate the distant search on the web site vost.free.fr
+it allows to initiate the distant search on the web site frigorifix
 the local dbm file is automatically written. Results are accumulated to the dbm file
 you defined.
 a search pattern must be define thru motif() method before launching a dbm search.

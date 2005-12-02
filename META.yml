@@ -1,6 +1,6 @@
 ---
 name: WWW-Sucksub-Frigo
-version: 0.02
+version: 0.03
 author:
   - Timothée Foucart <timothee.foucart@apinc.org>
 abstract: ~
@@ -15,5 +15,5 @@ requires:
 provides:
   WWW::Sucksub::Frigo:
     file: lib/WWW/Sucksub/Frigo.pm
-    version: 0.02
+    version: 0.03
 generated_by: Module::Build version 0.2611
